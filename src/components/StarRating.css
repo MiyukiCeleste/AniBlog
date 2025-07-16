@@ -1,0 +1,25 @@
+.starrating{
+    display:flex;
+    gap:0.6rem;
+    justify-content:space-evenly;
+}
+
+.star{
+    transition:all ease-in 0.3s;
+    cursor:pointer;
+}
+
+.starrating.small .star{
+    width:10px;
+    height:auto;
+}
+
+.starrating.medium .star{
+    width:24px;
+    height:auto;
+}
+
+.starrating.large .star{
+    width:32px;
+    height:auto;
+}

@@ -1,0 +1,174 @@
+.hm{
+    font-family:'Graphik';
+}
+
+.hm .welcome{
+    width:1000px;
+    position:absolute;
+    margin:-14rem -25.5rem;
+    background:linear-gradient(90deg, #f8eeff, #dccaf4);
+
+    padding:8rem 6rem 4rem;
+    border-radius:10px;
+    text-align:left;
+
+    box-shadow:8px 8px 20px 4px inset #cbb6e7;
+    transition:padding ease-in-out 5s;
+}
+
+.hm .welcome .layer{
+    position:relative;
+    display:inline-block;
+
+    font-family:'Proxima Nova';
+    cursor:default;
+}
+
+.hm .welcome .layer .shadow,
+.hm .welcome .layer .gradient{
+    position:absolute;
+    top:-10rem;
+    left:0rem;
+
+    padding:4rem 0rem;
+    white-space:nowrap;
+}
+
+.hm .welcome .layer .shadow{
+    color:transparent;
+    text-shadow:2px 2px 4px #c2b2d9;
+}
+
+.hm .welcome .layer .shadow span{
+    -webkit-text-stroke:0.2rem #9049c3;
+}
+
+.hm .welcome .layer .gradient{
+    background:#fff;   
+    color:transparent;
+    background-clip:text;
+
+    z-index:2;
+    font-weight:700 !important;
+}
+
+.hm .welcome .layer .gradient span{
+    background:radial-gradient(farthest-side at 30% 60%, #FFE76E, #FFC15E);
+    color:transparent;
+    background-clip:text;
+}
+
+
+
+.hm .feat{
+    position:absolute;
+    top:36rem;
+    left:9.5rem;
+}
+
+.hm h2{
+    font-weight:bold;
+    font-size:34px;
+}
+
+
+
+.hm .cardrow1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    gap:4rem;
+
+    margin:0rem 0 12rem;
+    position:absolute;
+    left:9.5rem;
+    top:43rem;
+
+    cursor:default;
+}
+
+.hm .cardrow1 .card{
+    width:240px;
+    height:300px;
+    border-radius:10px;
+    background-color:#fff;
+    transition:all ease-in-out 0.4s;
+
+    color:#000;
+    cursor:pointer;
+}
+
+.hm .cardrow1 .card:hover{
+    transform:scale(1.04);
+    box-shadow:0 2px 4px 2px #aaaaaaa2;
+}
+
+.hm .cardrow1 .card img{
+    width:100%;
+    max-height:132px;
+    overflow:hidden;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.hm .cardrow1 .card h3{
+    font-weight:600;
+    text-align:left;
+    margin:0.8rem 1.5rem;
+}
+
+
+
+
+
+.hm .new{
+    position:absolute;
+    top:68rem;
+    left:9.5rem;
+}
+
+
+
+.hm .cardrow2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    gap:4rem;
+
+    margin:0rem 0 12rem;
+    position:absolute;
+    left:9.5rem;
+    top:75rem;
+
+    cursor:default;
+}
+
+.hm .cardrow2 .card{
+    width:240px;
+    height:300px;
+    border-radius:10px;
+    background-color:#fff;
+    transition:all ease-in-out 0.4s;
+
+    color:#000;
+    cursor:pointer;
+}
+
+.hm .cardrow2 .card:hover{
+    transform:scale(1.04);
+    box-shadow:0 2px 4px 2px #aaaaaaa2;
+}
+
+.hm .cardrow2 .card img{
+    width:100%;
+    max-height:132px;
+    overflow:hidden;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.hm .cardrow2 .card h3{
+    font-weight:600;
+    text-align:left;
+    margin:0.8rem 1.5rem;
+}

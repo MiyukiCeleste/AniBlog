@@ -1,0 +1,159 @@
+.land{
+    width:100%;
+    height:70%;
+    background:linear-gradient(180deg, #FFF, #eddaff);
+    padding:12% 8%;
+
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.land .info{
+    text-align:left;
+    padding:2rem 1rem;
+}
+
+.land .info .svgbg{
+    position:absolute;
+    width:0%;
+    bottom:-40rem;
+    right:-30rem;
+    z-index:0;
+    opacity:0.2;
+
+    animation:moveIn 2.8s ease-in-out forwards;
+}
+
+@keyframes moveIn{
+    to{
+        position:absolute;
+        width:80%;
+        bottom:0rem;
+        right:10rem;
+    }
+}
+
+
+
+.land .info .grad{
+    position:relative;
+    display:inline-block;
+
+    font-family:'LiHei Pro';
+    font-size:0px;
+    font-weight:bold;
+
+    animation:sizeText 2s ease-in-out forwards;
+}
+
+@keyframes sizeText{
+    to{
+        font-size:90px;
+    }
+}
+
+.land .info .grad .stroke,
+.land .info .grad .gradient{
+    position:fixed;
+    top:-14rem;
+    left:-10rem;
+    opacity:0%;
+    
+    animation:moveText 3s ease-in-out forwards;
+}
+
+@keyframes moveText{
+    to{
+        top:2rem;
+        left:6rem;
+        opacity:100%;
+    }
+}
+
+.land .info .stroke{
+    color:transparent;
+    -webkit-text-stroke:0.4rem #793185;
+    text-shadow:4px 4px 6px #aaa;
+    z-index:1;
+}
+
+.land .info .gradient{
+    background:linear-gradient(180deg, #FFE76E, #FFC15E);
+    color:transparent;
+    background-clip:text;
+    z-index:2;
+}
+
+.land .info .gradient span{
+    background:#FFF;
+    color:transparent;
+    background-clip:text;
+}
+
+
+
+.land .info p{
+    margin:-6rem -30rem -8rem;
+
+    font-weight:500;
+    font-size:0px;
+    opacity:0%;
+
+    animation:paragraph 3s ease-in-out forwards,
+              opac 4s ease-in-out forwards;
+}
+
+@keyframes paragraph{
+    to{
+        margin:8rem -2rem -8rem;
+    
+        font-weight:500;
+        font-size:18px;
+    }
+}
+
+@keyframes opac{
+    to{
+        opacity:100%;
+    }
+}
+
+
+.land .info button{
+    margin:60rem -20rem -10rem;
+    transform:translate(-10%, 0);
+    padding:12px 18px;
+
+    font-size:0.4rem;
+    font-weight:400;
+    opacity:0%;
+    
+    background-color:transparent;
+    transition:all ease-in-out 1s;
+    animation:moveButt 3s ease-in-out forwards,
+              opacButt 4s ease-in-out forwards;
+}
+
+@keyframes moveButt{
+    to{
+        font-size:1.02rem;
+        margin:14rem -1.8rem -10rem;
+    }
+}
+
+@keyframes opacButt{
+    to{
+        opacity:100%;
+    }
+}
+
+.land .info button:hover{
+    margin-left:-1.4rem;
+    padding:16px 22px;
+    font-weight:600;
+    outline:none;
+    
+    transform:translate(10%, 0) scale(1.04);
+    background-color:#ffffff88;
+}

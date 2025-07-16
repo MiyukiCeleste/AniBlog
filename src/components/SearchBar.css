@@ -1,0 +1,54 @@
+.searchbar{
+    display:flex;
+    align-items:stretch;
+    width:fit-content;
+}
+
+.searchbar input{
+    width:250px;
+    border:none;
+    padding:12px 20px;
+
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
+    transition:all ease-in-out 0.5s;
+}
+
+.searchbar input:focus{
+    width:320px;
+}
+
+.searchbar input:placeholder-shown{
+    font-family:'Proxima Nova';
+    font-weight:500;
+    font-size:14px;
+}
+
+.searchbar button{
+    background:#dcbcfd;
+
+    outline:0;
+    border:0;
+
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+
+    transition:all ease-in-out 0.5s;
+}
+
+.searchbar button:hover{
+    background:#9853dd;
+    transform:scale(1.02);
+}
+
+.searchbar button img{
+    width:14px;
+    height:auto;
+    padding-top:2px !important;
+}
+
+.searchbar button:hover img{
+    width:16px;
+    height:auto;
+    padding-top:3px !important;
+}

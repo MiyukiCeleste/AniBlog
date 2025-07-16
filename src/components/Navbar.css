@@ -1,0 +1,482 @@
+nav{
+    width:100%;
+    background:transparent;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    backdrop-filter:blur(14px);
+
+    font-size:18px;
+    font-family:'Founders Grotesk';
+    transition:all 0.3s ease;
+}
+
+nav.scrolled{
+    background:linear-gradient(180deg, #B76FFFcc, #842edacc);
+    box-shadow:0px 2px 10px #aaa;
+}
+
+nav .leftside{
+    transition:all 1s ease-in-out;
+}
+
+nav .leftside img{
+    width:120px;
+    padding:0.7rem 1.2rem 0.2rem;
+}
+
+nav .rightside{
+    display:grid;
+    grid-auto-flow:column;
+    transition:all 1s ease-in-out;
+}
+
+nav .rightside .link{
+    position:relative;
+    width:max-content;
+    color:#793185;
+    padding:1.2rem 2rem;
+}
+
+nav.scrolled .rightside .link{
+    color:#fff;
+}
+
+nav .rightside .link::before{
+    content:'';
+    background:linear-gradient(90deg, #793185, #ba5acb, #ffd689, #fef3bd);
+    position:absolute;
+
+    height:3px;
+    width:0;
+
+    bottom:0;
+    left:0;
+
+    transition:300ms;
+}
+
+nav.scrolled .rightside .link::before{
+    background:#fff;
+}
+
+nav .rightside .link:hover::before{
+    width:100%;
+}
+
+nav .rightside .link:hover{
+    background:linear-gradient(180deg, #dacaf200, #dacaf255);
+}
+
+
+
+
+nav .rightside .menu{
+    display:none;
+    padding:1rem;
+    background:none;
+}
+
+nav .rightside .menu img{
+    height:30px;
+    
+}
+
+nav > .sidebar > .leftside > button{
+    padding:1.2rem 0.2rem!important;
+    margin:0 -1rem;
+    background:none !important;
+    outline:0;
+    border:0;
+}
+
+nav > .sidebar > .leftside > button > img{
+    height:20px;
+    
+}
+
+nav > .sidebar > .leftside > img{
+    padding:1rem -2rem 0.2rem !important;
+}
+
+
+
+
+
+
+
+nav .sidebar{
+    background:radial-gradient(farthest-side at 10% 120%,#b76fffcc, #842edacc);
+    box-shadow:0px 2px 10px #aaa;
+
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:400px;
+    z-index:999;
+    backdrop-filter:blur(20px);
+
+    display:flex;
+    flex-direction:column !important;
+    align-items:flex-start;
+    justify-content:flex-start !important;
+
+    transform:translateX(100%);
+    opacity:0;
+    pointer-events:none;
+    transition:transform 1s ease-in-out, opacity 0.6s ease, all 1s ease-in-out;
+}
+
+.sidebar.active{
+    transform:translateX(0%);
+    opacity:1;
+    pointer-events:auto;
+}
+
+nav .sidebar .leftside{
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content:flex-start !important;
+    transition:all 1s ease-in-out;
+}
+
+nav .sidebar .rightside{
+    display:flex;
+    flex-direction:column !important;
+    align-items:flex-start;
+    justify-content:flex-start;
+
+    gap:1.5rem;
+    padding:1rem 3.15rem;
+    transition:all 1s ease-in-out;
+}
+
+nav .sidebar .rightside .link{
+    position:relative;
+    width:max-content;
+    color:#FFF;
+
+    font-size:1.2rem;
+    padding:0rem !important;
+    text-align:left;
+}
+
+nav .sidebar .rightside .link:hover{
+    background:none !important;
+}
+
+nav .sidebar .rightside .link::before{
+    height:2px !important;
+}
+
+
+
+
+
+@media(max-width:800px) {
+    .sidebar{
+        height:100%;
+    }
+    .hideOnMobile{
+        display:none;
+    }
+    nav .rightside .menu{
+        display:block;
+    }
+    nav .sidebar .rightside .link{
+        font-size:1.3rem;
+    }
+}
+
+
+@media(max-width:669px){
+    nav .leftside img{
+        width:12rem;
+        padding:1.8rem 2.4rem 0.9rem;
+    }
+
+
+    nav .rightside .menu{
+        padding:2rem;
+    }
+
+    nav .rightside .menu img{
+        height:36px;
+    }
+
+
+    .sidebar{
+        width:34%;
+    }
+
+    nav .sidebar .rightside{
+        padding:0.6rem 10rem;
+    }
+
+    nav .sidebar .rightside .link{
+        font-size:1.6rem;
+        padding:0.8rem 0 !important;
+    }
+
+
+    nav .sidebar .leftside{
+        padding:1rem 0;
+    }
+    nav > .sidebar > .leftside > img{
+        width:13rem;
+        margin:0 -2rem;
+    }
+    nav > .sidebar > .leftside > button{
+        padding:0.6rem 0!important;
+        margin:0 -4rem;
+    }
+    nav > .sidebar > .leftside > button > img{
+        height:32px;
+    }
+}
+
+
+@media(max-width:600px){
+    nav .leftside img{
+        width:13rem;
+        padding:1.8rem 2.8rem 0.9rem;
+    }
+
+
+    nav .rightside .menu{
+        padding:1.6rem;
+    }
+
+    nav .rightside .menu img{
+        height:40px;
+    }
+
+
+    .sidebar{
+        width:40%;
+    }
+
+    nav .sidebar .rightside{
+        padding:0.4rem 10rem;
+    }
+
+    nav .sidebar .rightside .link{
+        font-size:2.4rem;
+        padding:1.2rem 0 !important;
+    }
+
+
+    nav .sidebar .leftside{
+        padding:1rem 0;
+    }
+    nav > .sidebar > .leftside > img{
+        width:14rem;
+        margin:0 -4rem;
+    }
+    nav > .sidebar > .leftside > button{
+        padding:0.6rem 0!important;
+        margin:0 -2.2rem;
+    }
+    nav > .sidebar > .leftside > button > img{
+        height:34px;
+    }
+}
+
+
+
+
+
+
+@media(max-width:550px){
+    nav .leftside img{
+        width:14rem;
+        padding:1.8rem 2.8rem 0.9rem;
+    }
+
+
+    nav .rightside .menu{
+        padding:2rem;
+    }
+
+    nav .rightside .menu img{
+        height:44px;
+    }
+
+
+    .sidebar{
+        width:50%;
+    }
+
+    nav .sidebar .rightside{
+        padding:0.4rem 14.5rem;
+    }
+
+    nav .sidebar .rightside .link{
+        font-size:2.7rem;
+        padding:1.4rem 0 !important;
+    }
+
+
+    nav .sidebar .leftside{
+        padding:2.4rem 0;
+    }
+    nav > .sidebar > .leftside > img{
+        width:16rem;
+        margin:0 -4rem;
+    }
+    nav > .sidebar > .leftside > button{
+        padding:1rem 0!important;
+        margin:0 -2rem;
+    }
+    nav > .sidebar > .leftside > button > img{
+        height:40px;
+    }
+}
+
+@media(max-width:500px){
+    nav .leftside img{
+        width:16rem;
+        padding:2rem 3rem 1.1rem;
+    }
+
+
+    nav .rightside .menu{
+        padding:2rem;
+    }
+
+    nav .rightside .menu img{
+        height:48px;
+    }
+
+
+    .sidebar{
+        width:60%;
+    }
+
+    nav .sidebar .rightside{
+        padding:1rem 14.5rem;
+    }
+
+    nav .sidebar .rightside .link{
+        font-size:3.1rem;
+        padding:1.4rem 0 !important;
+    }
+
+
+    nav .sidebar .leftside{
+        padding:2.4rem 0;
+    }
+    nav > .sidebar > .leftside > img{
+        width:18rem;
+        margin:0 -4rem;
+    }
+    nav > .sidebar > .leftside > button{
+        padding:2rem 0!important;
+        margin:0 -3rem;
+    }
+    nav > .sidebar > .leftside > button > img{
+        height:48px;
+    }
+}
+
+
+@media(max-width:450px) {
+    nav .leftside img{
+        width:18rem;
+        padding:2rem 3rem 1.1rem;
+    }
+
+
+    nav .rightside .menu{
+        padding:3rem;
+    }
+
+    nav .rightside .menu img{
+        height:54px;
+    }
+
+
+    .sidebar{
+        width:100%;
+    }
+
+    nav .sidebar .rightside{
+        padding:1rem 16rem;
+    }
+
+    nav .sidebar .rightside .link{
+        font-size:3.6rem;
+        padding:1.8rem 0 !important;
+    }
+
+
+    nav .sidebar .leftside{
+        padding:2.4rem 0;
+    }
+    nav > .sidebar > .leftside > img{
+        width:22rem;
+    }
+    nav > .sidebar > .leftside > button{
+        padding:2rem 0!important;
+        margin:0 -5rem;
+    }
+    nav > .sidebar > .leftside > button > img{
+        height:54px;
+    }
+}
+
+
+
+@media(max-width:400px) {
+    nav .leftside img{
+        width:26rem;
+        padding:2rem 3rem 1.1rem;
+    }
+
+
+    nav .rightside .menu{
+        padding:3rem;
+    }
+
+    nav .rightside .menu img{
+        height:66px;
+    }
+
+
+    .sidebar{
+        width:100%;
+    }
+
+    nav .sidebar .rightside{
+        padding:1rem 100vw;
+    }
+
+    nav .sidebar .rightside .link{
+        font-size:4.5rem;
+        padding:2.4rem 0 !important;
+    }
+
+
+    nav .sidebar .leftside{
+        padding:3rem 0;
+    }
+    nav > .sidebar > .leftside > img{
+        width:30rem;
+    }
+    nav > .sidebar > .leftside > button{
+        padding:3rem 0!important;
+        margin:0 -5rem;
+    }
+    nav > .sidebar > .leftside > button > img{
+        height:64px;
+    }
+}
