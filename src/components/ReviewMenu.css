@@ -15,7 +15,7 @@
 .revcont .wrap .scrollcont{
     display:flex;
     gap:16px;
-    /* padding:2rem; */
+    padding:2rem;
     overflow-x:auto;
     perspective:1000px;
     scroll-behavior:smooth;

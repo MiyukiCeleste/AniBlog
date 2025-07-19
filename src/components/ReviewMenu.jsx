@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './ReviewMenu.css';
 
 import Left from '../assets/leftright/left.svg';
@@ -56,16 +56,34 @@ const reviews = [
 
 function ReviewMenu() {
   const scrollRef = useRef(null);
+  const cardRefs = useRef([]);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const scrollToCard = (index) => {
+    if (!scrollRef.current || !cardRefs.current[index]) return;
+    
+    const container = scrollRef.current;
+    const card = cardRefs.current[index];
+
+    const containerCenter = container.offsetWidth / 2;
+    const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+
+    const newScrollLeft = cardCenter - containerCenter;
+    container.scrollTo({left: newScrollLeft, behavior: 'smooth'});
+
+    setCurrentIndex(index);
+  };
 
   const scrollLeft = () => {
-    if (scrollRef.current) {
-        scrollRef.current.scrollBy({left:-220, behaviour:'smooth'})
+    if (currentIndex > 0) {
+        scrollToCard(currentIndex - 1);
     }
   };
 
   const scrollRight = () => {
-    if (scrollRef.current) {
-        scrollRef.current.scrollBy({left:220, behaviour:'smooth'})
+    if (currentIndex < reviews.length - 1) {
+        scrollToCard(currentIndex + 1);
     }
   };
 
@@ -78,7 +96,7 @@ function ReviewMenu() {
         </button>
         <div className='scrollcont' ref={scrollRef}>
             {reviews.map((anime, index) => (
-                <div className="card" key={index}>
+                <div className="card" key={index} ref={el => cardRefs.current[index] = el}>
                     <img src={anime.pic} />
                     <div className="overlay">
                         <h3 className="animetitle">{anime.title}</h3>
