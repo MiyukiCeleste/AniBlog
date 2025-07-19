@@ -6,6 +6,7 @@
 .revcont .title{
     font-size:34px;
     font-weight:bold;
+    text-align:left;
 }
 
 .revcont .wrap{
@@ -15,8 +16,9 @@
 .revcont .wrap .scrollcont{
     display:flex;
     gap:16px;
-    padding:2rem;
+    /* padding:2rem; */
     overflow-x:auto;
+    overflow-y:hidden;
     perspective:1000px;
     scroll-behavior:smooth;
 }
@@ -108,11 +110,11 @@
 }
 
 .scrollbutt.left{
-    left:0;
+    left:-1.4rem;
 }
 
 .scrollbutt.right{
-    right:0;
+    right:-1.4rem;
 }
 
 .scrollbutt img{

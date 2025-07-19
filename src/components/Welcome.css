@@ -1,11 +1,14 @@
-.hm{
-    font-family:'Graphik';
+.position{
+    display:flex;
+    justify-content:center;
+    position:default;
+    
+    margin:4rem 0;
 }
 
-/* .hm .welcome{
+.position .welcome{
     width:1000px;
-    position:absolute;
-    margin:-14rem -25.5rem;
+    position:relative;
     background:linear-gradient(90deg, #f8eeff, #dccaf4);
 
     padding:8rem 6rem 4rem;
@@ -16,7 +19,7 @@
     transition:padding ease-in-out 5s;
 }
 
-.hm .welcome .layer{
+.position .welcome .layer{
     position:relative;
     display:inline-block;
 
@@ -24,8 +27,8 @@
     cursor:default;
 }
 
-.hm .welcome .layer .shadow,
-.hm .welcome .layer .gradient{
+.position .welcome .layer .shadow,
+.position .welcome .layer .gradient{
     position:absolute;
     top:-10rem;
     left:0rem;
@@ -34,16 +37,16 @@
     white-space:nowrap;
 }
 
-.hm .welcome .layer .shadow{
+.position .welcome .layer .shadow{
     color:transparent;
     text-shadow:2px 2px 4px #c2b2d9;
 }
 
-.hm .welcome .layer .shadow span{
+.position .welcome .layer .shadow span{
     -webkit-text-stroke:0.2rem #9049c3;
 }
 
-.hm .welcome .layer .gradient{
+.position .welcome .layer .gradient{
     background:#fff;   
     color:transparent;
     background-clip:text;
@@ -52,8 +55,8 @@
     font-weight:700 !important;
 }
 
-.hm .welcome .layer .gradient span{
+.position .welcome .layer .gradient span{
     background:radial-gradient(farthest-side at 30% 60%, #FFE76E, #FFC15E);
     color:transparent;
     background-clip:text;
-} */
+}
