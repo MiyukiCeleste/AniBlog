@@ -5,6 +5,7 @@ import './Home.css';
 import SearchBar from '../components/SearchBar';
 import RateSummary from '../components/RatingSummary';
 import TooPerfect from '../assets/tooperfectsaint.png';
+import Review from '../components/ReviewMenu';
 
 function Home() {
   const handleSearch = (query) => {
@@ -20,8 +21,12 @@ function Home() {
         <p>Search your favorite Anime:</p>
         <SearchBar onSearch={handleSearch} />
       </div>
+
+      <div className="test">
+        <Review />
+      </div>
       
-      <div className='feat'>
+      {/* <div className='feat'>
         <h2>Featured Reviews</h2>
       </div>
 
@@ -47,7 +52,7 @@ function Home() {
         </a>
       </div>
 
-      {/* ____________ */}
+      //
 
       <div className='new'>
         <h2>New Release</h2>
@@ -73,7 +78,7 @@ function Home() {
           <img src={TooPerfect} />
           <h3>The Too-Perfect Saint</h3>
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }
