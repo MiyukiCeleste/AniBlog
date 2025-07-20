@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './styles/ReviewMenu.css';
+import '../styles/ReviewMenu.css';
 
 import Left from '../assets/leftright/left.svg';
 import Right from '../assets/leftright/right.svg';

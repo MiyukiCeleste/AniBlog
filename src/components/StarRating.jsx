@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/StarRating.css';
+import '../styles/StarRating.css';
 import filledStar from '../assets/filledstar.svg';
 import halfStar from '../assets/halfstar.svg';
 import emptyStar from '../assets/emptystar.svg';

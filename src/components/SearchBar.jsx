@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { useState } from 'react';
-import './styles/SearchBar.css';
-import search1 from '../assets/search1.svg';
-import search2 from '../assets/search2.svg';
+import '../styles/SearchBar.css';
+import search1 from '../assets/searchbar/search1.svg';
+import search2 from '../assets/searchbar/search2.svg';
 
 function SearchBar({ onSearch }) {
     const [query, setQuery] = useState('');
