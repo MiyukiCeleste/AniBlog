@@ -24,7 +24,7 @@ nav.scrolled{
 }
 
 nav .leftside{
-    transition:all 1s ease-in-out;
+    transition:all 0.4s ease-in-out;
 }
 
 nav .leftside img{
@@ -35,13 +35,14 @@ nav .leftside img{
 nav .rightside{
     display:grid;
     grid-auto-flow:column;
-    transition:all 1s ease-in-out;
+    transition:all 0.4s ease-in-out;
 }
 
 nav .rightside .link{
     position:relative;
     width:max-content;
     color:#793185;
+    font-size:1.24rem;
     padding:1.2rem 2rem;
 }
 

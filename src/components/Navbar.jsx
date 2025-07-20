@@ -5,7 +5,7 @@ import Logo from '../assets/AniBlog.svg';
 import '../pages/Hero';
 import '../pages/About';
 import '../pages/Contact';
-import './Navbar.css';
+import './styles/Navbar.css';
 
 import Menu from '../assets/navicons/menu.svg';
 import Menu2 from '../assets/navicons/menu2.svg';

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './ReviewMenu.css';
+import './styles/ReviewMenu.css';
 
 import Left from '../assets/leftright/left.svg';
 import Right from '../assets/leftright/right.svg';
@@ -96,12 +96,12 @@ function ReviewMenu() {
         </button>
         <div className='scrollcont' ref={scrollRef}>
             {reviews.map((anime, index) => (
-                <div className="card" key={index} ref={el => cardRefs.current[index] = el}>
+                <a href='' className="card" key={index} ref={el => cardRefs.current[index] = el}>
                     <img src={anime.pic} />
                     <div className="overlay">
                         <h3 className="animetitle">{anime.title}</h3>
                     </div>
-                </div>
+                </a>
             ))}
         </div>
         <button className="scrollbutt right" onClick={scrollRight}>

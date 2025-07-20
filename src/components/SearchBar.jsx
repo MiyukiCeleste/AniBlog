@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useState } from 'react';
-import './SearchBar.css';
+import './styles/SearchBar.css';
 import search1 from '../assets/search1.svg';
 import search2 from '../assets/search2.svg';
 
