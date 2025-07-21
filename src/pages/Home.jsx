@@ -3,6 +3,7 @@ import React from 'react';
 import './Home.css';
 import Welcome from '../components/Welcome';
 import Review from '../components/ReviewMenu';
+import Footer from '../components/Footer';
 
 function Home() {
   

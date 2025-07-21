@@ -6,6 +6,10 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Browse from './pages/Browse';
 import Contact from'./pages/Contact';
+
+import Privacy from './pages/termsconditions/Policy';
+import DMCA from './pages/termsconditions/DMCA';
+import FAQ from './pages/termsconditions/FAQ';
 import Layout from './components/Layout';
 
 function App() {
@@ -19,13 +23,13 @@ function App() {
             <Route path='/browse' element={<Browse />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
+
+            <Route path='/privacy' element={<Privacy />} />
+            <Route path='/dmca' element={<DMCA />} />
+            <Route path='/faq' element={<FAQ />} />
           </Route>
         </Routes>
       </BrowserRouter>
-
-      <p className="copyright">
-        Copyright - AniBlog All Rights Reserved 2025
-      </p>
     </>
   )
 }

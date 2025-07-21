@@ -1,6 +1,6 @@
 .revcont{
     padding:2rem;
-    margin:3rem 0;
+    margin:auto 0;
     background:none;
 }
 
@@ -69,14 +69,20 @@
     color:#fff;
     font-size:0.96rem;
     font-weight:bold;
-    margin-bottom:0.84rem;
+    text-align:center;
+    margin-bottom:0.74rem;
 
     text-shadow:2px 1px 2px #6c4e83;
+    transition:transform 0.6s ease;
 }
 
 
 .card:hover .overlay{
     opacity:1;
+}
+
+.card:hover .overlay .animetitle{
+    transform: translateY(-0.55rem);
 }
 
 .scrollcont::-webkit-scrollbar{

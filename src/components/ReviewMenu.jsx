@@ -14,6 +14,9 @@ import Bocchi from '../assets/animecover/Bocchi.png';
 import Hanako2 from '../assets/animecover/Hanako2.jpg'
 import Kusuriya2 from '../assets/animecover/Kusuriya2.jpg';
 import BossOnTime from '../assets/animecover/ClockBossOntime.jpg';
+import SevenPrince2 from '../assets/animecover/SevenPrince2.png';
+import KaoruHana from '../assets/animecover/KaoruHana.jpg';
+import DukeTutor from '../assets/animecover/DukeTutor.jpg';
 
 const reviews = [
     {
@@ -51,6 +54,18 @@ const reviews = [
     {
         title:"I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time",
         pic: BossOnTime,
+    },
+    {
+        title:"I Was Reincarnated as the 7th Prince so I Can Take My Time Perfecting My Magical Ability Season 2",
+        pic: SevenPrince2,
+    },
+    {
+        title:"The Fragrant Flower Blooms With Dignity",
+        pic: KaoruHana,
+    },
+    {
+        title:"Private Tutor to the Duke's Daughter",
+        pic: DukeTutor,
     },
 ];
 
