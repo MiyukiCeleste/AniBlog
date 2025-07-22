@@ -1,16 +1,18 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import ScrollLink from './scrollhelp/ScrollLink';
+
 import Logo from '../assets/AniBlog.svg'
 import '../styles/Footer.css';
+
 
 function Footer() {
   return (
     <footer>
       <div className="footcont">
         <div className="brief">
-          <Link to='/home' onClick={() => window.scrollTo(0, 0)} >
+          <ScrollLink to='/home'>
             <img src={Logo} />
-          </Link>
+          </ScrollLink>
           <p>
             Discover, share, and rate your favorite anime - join
             the Aniblog community and let your voice shape the 
@@ -19,15 +21,15 @@ function Footer() {
         </div>
         <div className="lists">
           <ul>
-            <li><Link to='/privacy' className='list'>Privacy</Link></li>
-            <li><Link to='/dmca' className='list'>DMCA</Link></li>
-            <li><Link to='/faq' className='list'>FAQ</Link></li>
+            <li><ScrollLink to='/privacy' className='list' onClick={() => window.scrollTo(0, 0)}>Privacy</ScrollLink></li>
+            <li><ScrollLink to='/dmca' className='list' onClick={() => window.scrollTo(0, 0)}>DMCA</ScrollLink></li>
+            <li><ScrollLink to='/faq' className='list' onClick={() => window.scrollTo(0, 0)}>FAQ</ScrollLink></li>
           </ul>
         </div>
         <div className="copyright">
-          <p>&copy; 2025 <Link to="/home" className='link' onClick={() => window.scrollTo(0, 0)}>
+          <p>&copy; 2025 <ScrollLink to="/home" className='link'>
               AniBlog&trade;
-            </Link> | Made by <span>Astellaris</span>
+            </ScrollLink> | Made by <span>Astellaris</span>
           </p>
         </div>
       </div>

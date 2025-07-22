@@ -49,7 +49,9 @@ function Navbar() {
         </div>
       </div>
       <div className='leftside'>
-        <img src={Logo} />
+        <Link to='/home' onClick={() => window.scrollTo(0, 0)}>
+          <img src={Logo} />
+        </Link>
       </div>
       <div className='rightside'>
         <Link className='link hideOnMobile' to='/home'>Home</Link>

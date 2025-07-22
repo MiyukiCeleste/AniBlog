@@ -1,8 +1,8 @@
 .pp{
     background:radial-gradient(50% 52%, #c8b0dedd, #fff);
     border-radius:14px;
-    padding:3rem 4rem;
-    margin:4rem 12rem;
+    padding:3rem 4rem 1rem;
+    margin:4rem 12rem -2rem;
 }
 
 h2{
