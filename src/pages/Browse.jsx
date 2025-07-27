@@ -2,8 +2,10 @@ import React from 'react'
 
 function Browse() {
   return (
-    <div>
-      
+    <div className='brsw'>
+      <div className="intro">
+        
+      </div>
     </div>
   )
 }

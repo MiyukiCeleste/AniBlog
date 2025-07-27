@@ -2,17 +2,17 @@
     background:radial-gradient(50% 52%, #c8b0dedd, #fff);
     border-radius:14px;
     padding:3rem 4rem 1rem;
-    margin:4rem 12rem -2rem;
+    margin:4rem 14rem -2rem;
 }
 
 h2{
-    font-size:1.8rem;
-    margin-bottom:30px;
+    font-size:1.77rem;
+    padding-bottom:1.2rem;
 }
 
 h3{
-    font-size:1.5rem;
-    margin:3.2rem 0 -1rem;
+    font-size:1.47rem;
+    margin:3.1rem 0 -1rem;
 }
 
 p{
@@ -29,6 +29,11 @@ ul{
     font-weight:400;
     text-align:left;
     margin-top:-0.8rem;
+    margin-left:-0.2rem;
+}
+
+ul li::marker{
+    font-size:0.9rem;
 }
 
 ul li span{
@@ -43,8 +48,10 @@ ol{
     margin-top:1.2rem;
 }
 
-ol li.block span{
+ol li.block i{
     display:inline-block;
+    color:#6e528a;
+    font-weight:500;
     margin:10px 0 !important;
 }
 

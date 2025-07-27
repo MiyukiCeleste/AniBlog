@@ -66,17 +66,17 @@ function DMCA() {
                 </li>
                 <li className="block">
                     Include both of the following statements in your Notice:
-                    <span>
+                    <i>
                     "I have a good faith belief that the use of the copyrighted 
                     material I am complaining of is not authorized by the 
                     copyright owner, its agent, or the law."
-                    </span>
-                    <span>
+                    </i>
+                    <i>
                     "The information in this notice is accurate, and under 
                     penalty of perjury, I am the owner, or authorized to act 
                     on behalf of the owner, of the copyright or exclusive 
                     right that is allegedly infringed."
-                    </span>
+                    </i>
                 </li>
                 <li className="block">
                     Provide your full legal name and an electronic or 

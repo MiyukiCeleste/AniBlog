@@ -111,7 +111,7 @@ function ReviewMenu() {
         </button>
         <div className='scrollcont' ref={scrollRef}>
             {reviews.map((anime, index) => (
-                <a href='' className="card" key={index} ref={el => cardRefs.current[index] = el}>
+                <a className="card" key={index} ref={el => cardRefs.current[index] = el}>
                     <img src={anime.pic} />
                     <div className="overlay">
                         <h3 className="animetitle">{anime.title}</h3>
